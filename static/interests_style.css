@@ -12,11 +12,13 @@ body {
 
 .container2{
     display: flex;
+    flex-direction: column;
     margin-top: 1%;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
     background-color: white;
+    border-radius: 8px;
 }
 
 
@@ -24,8 +26,15 @@ body {
     flex: 1;
     background-color: rgb(174, 172, 192);
     border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 .Box2 {
+    flex: 1;
+    background-color: rgb(174, 172, 192);
+    border: none;
+}
+.Box2-1 {
     flex: 1;
     background-color: rgb(174, 172, 192);
     border: none;
@@ -34,4 +43,16 @@ body {
     flex: 1;
     background-color: rgb(123, 120, 154);
     border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.Box-toggle {
+    flex: 1;
+    background-color: #030089;
+    border-color: white;
+    color: white;
+    border-radius: 8px;
+
 }

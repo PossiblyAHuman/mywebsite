@@ -2,6 +2,13 @@ body {
     background-color: #f2f2f2;
 }
 
+img {
+    pointer-events: none;
+    border-radius: 8px;
+    height: auto;
+    max-width: 100%;
+}
+
 
 .container1{
     display: flex;
@@ -12,23 +19,37 @@ body {
 
 .container2{
     display: flex;
-    margin-top: 1%;
+    /*margin-top: 1%;*/
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
+}
+.container3{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.containerMyTitle{
+    display: flex;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
 .Box1 {
     flex: 1;
-    background-color: rgb(174, 172, 192);
+    background-color: rgb(123, 120, 154);
     border: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 .Box2 {
     flex: 1;
-    background-color: rgb(123, 120, 154);
+    background-color: rgb(174, 172, 192);
     border: none;
 }
 .Box2-1 {
@@ -45,11 +66,22 @@ body {
 }
 .Box4 {
     flex: 1;
-    /*background-color: rgb(174, 172, 192);*/
-    border: none;
+    flex-grow: 1;
+    margin-right: 0.5%;
+}
+.Box5 {
+    flex: 1;
+    flex-grow: 1;
+    background-color: white;
+    margin-left: 0.5%;
+    border-radius: 8px;
+}
+.Box3-1 {
+    flex: 1;
+    flex-grow: 1; 
 }
 
-.pdf {
-    width: 100%;
-    height: 700px;
+.MyTitleBox1 {
+    flex: 1;
+    flex-grow: 1; 
 }

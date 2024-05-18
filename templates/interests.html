@@ -3,26 +3,26 @@
     <title>My website</title>
     <link rel="stylesheet" type="text/css" href="../static/interests_style.css"/>
     <script type="text/javascript" src="../static/functions.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class = "container1">
         <button type="button" class="Box1" onclick="homepage();"><h2>About Me</h2></button>
         <button type="button" class="Box2" onclick="resume();"><h2>Resume</h2></button>
-        <button type="button" class="Box3" onclick="interests();"><h2>Interests</h2></button>
+        <button type="button" class="Box2-1" onclick="projects();"><h2>Projects</h2></button>
+        <button type="button" class="Box3"><h2>Interests</h2></button>
     </div>
     <div class = "container2">
-        <div class="Box4">
-            <h2>Technology</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error voluptas maiores suscipit ea alias, perferendis non! Dolor, explicabo. Suscipit officia dolorem ex necessitatibus consequuntur illum omnis labore odit est.</h3>
-            <h2>Art</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error voluptas maiores suscipit ea alias, perferendis non! Dolor, explicabo. Suscipit officia dolorem ex necessitatibus consequuntur illum omnis labore odit est.</h3>
-            <h2>Finance</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error voluptas maiores suscipit ea alias, perferendis non! Dolor, explicabo. Suscipit officia dolorem ex necessitatibus consequuntur illum omnis labore odit est.</h3>
-            <h2>Games</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error voluptas maiores suscipit ea alias, perferendis non! Dolor, explicabo. Suscipit officia dolorem ex necessitatibus consequuntur illum omnis labore odit est.</h3>
+        <button class="Box-toggle" onclick="interest_tech()"><h3>Technology <i class="fa fa-caret-square-o-down"></i></h3></button>
+        <div class="Box4" id="techbox">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error voluptas maiores suscipit ea alias, perferendis non! Dolor, explicabo. Suscipit officia dolorem ex necessitatibus consequuntur illum omnis labore odit est.
         </div>
-        
+        <button class="Box-toggle" onclick="interest_programming()"><h3>Programming <i class="fa fa-caret-square-o-down"></i></h3></button>
+        <div class="Box4" id="programmingbox">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error voluptas maiores suscipit ea alias, perferendis non! Dolor, explicabo. Suscipit officia dolorem ex necessitatibus consequuntur illum omnis labore odit est.
+        </div>
+
     </div>
 </body>
 </html>
