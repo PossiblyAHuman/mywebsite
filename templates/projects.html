@@ -5,15 +5,18 @@
     <script type="text/javascript" src="../static/functions.js"></script>
 </head>
 
-<body>
+<body onload = "allProjects();">
     <div class = "container1">
         <button type="button" class="Box1" onclick="homepage();"><h2>About Me</h2></button>
         <button type="button" class="Box2" onclick="resume();"><h2>Resume</h2></button>
         <button type="button" class="Box2-1"><h2>Projects</h2></button>
         <button type="button" class="Box3" onclick="interests();"><h2>Interests</h2></button>
     </div>
+
+
     <div class = "container2">
-        <div class="Box4">
+        <div class="Box4" id="Box4">
+            <h2 style="color:white">This functionality only works if the backend server is on</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error voluptas maiores suscipit ea alias, perferendis non! Dolor, explicabo. Suscipit officia dolorem ex necessitatibus consequuntur illum omnis labore odit est.
         </div>
     </div>

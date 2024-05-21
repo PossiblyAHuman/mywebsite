@@ -1,5 +1,13 @@
+html {
+    overflow-y: scroll;
+}
+
+
+
+
 body {
     background-color: #f2f2f2;
+    
 }
 
 img {
@@ -8,6 +16,7 @@ img {
     height: auto;
     max-width: 100%;
 }
+
 
 
 .container1{
@@ -19,10 +28,16 @@ img {
 
 .container2{
     display: flex;
-    /*margin-top: 1%;*/
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 0.5%;
     text-align: center;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .container2{
+        flex-direction: column;
+    }
 }
 .container3{
     display: flex;
@@ -32,13 +47,39 @@ img {
 }
 
 
+
 .containerMyTitle{
     display: flex;
     text-align: center;
+    margin-top: 1%;
     margin-left: 15%;
     margin-right: 15%;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #030089;
+    color: white;
 }
 
+@media (max-aspect-ratio: 1/1) {
+    .containerMyTitle{
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .container1{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .container2{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .container3{
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+}
 
 .Box1 {
     flex: 1;
@@ -64,17 +105,38 @@ img {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.Box4 {
-    flex: 1;
-    flex-grow: 1;
-    margin-right: 0.5%;
+@media (max-aspect-ratio: 1/1) {
+    .Box4 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+        flex: 1;
+        flex-grow: 1;
+    }
+    .Box5 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+        flex: 1;
+        flex-grow: 1;
+        background-color: white;
+        border-radius: 8px;
+    }
 }
-.Box5 {
-    flex: 1;
-    flex-grow: 1;
-    background-color: white;
-    margin-left: 0.5%;
-    border-radius: 8px;
+
+@media (min-aspect-ratio: 1/1) {
+    .Box4 {
+        flex: 1;
+        flex-grow: 1;
+        margin-right: 0.5%;
+    }
+    .Box5 {
+        flex: 1;
+        flex-grow: 1;
+        background-color: white;
+        margin-left: 0.5%;
+        border-radius: 8px;
+    }
 }
 .Box3-1 {
     flex: 1;
@@ -84,4 +146,51 @@ img {
 .MyTitleBox1 {
     flex: 1;
     flex-grow: 1; 
+}
+.ButtonBox {
+    flex: 1;
+    flex-grow: 1;
+    
+}
+
+
+.external_link{
+    width: 10%;
+    min-width: 80px;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    border-color:gray;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.external_link img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-aspect-ratio: 1/1){
+    .external_link{
+        width: 15%;
+        min-width: 100px;
+    }
+}
+
+.ButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonBox1 {
+    flex-grow: 0;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.ButtonBox2 {
+    flex-grow: 1;
+    
 }

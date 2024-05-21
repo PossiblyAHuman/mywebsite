@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+        /* Basic styles for the container and boxes */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+            gap: 20px; /* Add some spacing between boxes */
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .box {
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        /* Media query to change to two boxes per row */
+        @media (max-aspect-ratio: 4/3) {
+            .container {
+                grid-template-columns: repeat(2, 1fr); /* Two columns when aspect ratio is 4/3 or narrower */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <!-- Add more boxes as needed -->
+    </div>
+</body>
+</html>
