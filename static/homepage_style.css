@@ -196,7 +196,7 @@ img {
     width: 10%;
     min-width: 80px;
     height: auto;
-    min-height: 3vh;
+    min-height: 4vh;
     background-color: white;
     border-radius: 8px;
     border-color:gray;
@@ -209,9 +209,9 @@ img {
 
 .external_link img {
     width: 30px;
-    min-width: 3vh;
+    min-width: 4vh;
     height: 30px;
-    min-height: 3vh;
+    min-height: 4vh;
 }
 
 @media (max-aspect-ratio: 1/1){
