@@ -12,6 +12,7 @@ body {
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
+    min-height: 3vw;
 }
 
 .container2{
@@ -43,16 +44,19 @@ body {
     border: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    cursor: pointer;
 }
 .Box2 {
     flex: 1;
     background-color: rgb(174, 172, 192);
     border: none;
+    cursor: pointer;
 }
 .Box2-1 {
     flex: 1;
     background-color: rgb(123, 120, 154);
     border: none;
+    cursor: pointer;
 }
 .Box3 {
     flex: 1;
@@ -60,6 +64,7 @@ body {
     border: none;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;
 }
 
 
