@@ -24,7 +24,7 @@ img {
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    min-height: 3vw;
+    min-height: 5vh;
 }
 
 .container2{
@@ -196,6 +196,7 @@ img {
     width: 10%;
     min-width: 80px;
     height: auto;
+    min-height: 3vh;
     background-color: white;
     border-radius: 8px;
     border-color:gray;
@@ -208,7 +209,9 @@ img {
 
 .external_link img {
     width: 30px;
+    min-width: 3vh;
     height: 30px;
+    min-height: 3vh;
 }
 
 @media (max-aspect-ratio: 1/1){
